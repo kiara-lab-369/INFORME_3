@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO QUIOSCO</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+<!-- BARRA -->    
+<nav>
+    <h1>MY FIRST PAGE</h1>
+    <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="qnsomos.html">QUIENES SOMOS</a></li>
+        <li><a href="contactos.html">CONTACTOS</a></li>
+        <li><a href="msyvs.html">VISION Y MISION</a></li>
+        <li><a href="#">ELECCIONES 2026-CANDIDATOS</a>
+            <ul class="submenu">
+                <li><a href="preciyv.html">PRESIDENTE Y VICEPRESIDENTE</a></li>
+                <li><a href="senadores.html">SENADORES</a></li>
+                <li><a href="diputados.html">DIPUTADOS</a></li>
+                <li><a href="parlamento.html">PARLAMENTO ANDINO</a></li>
+            </ul>
+        </li>
+        <li ><a href="#">FORMULARIOS</a>
+            <ul class="submenu">
+                <li><a href="formulario.html">PRIMERA PRUEBA</a></li>
+                <li><a href="formulario1.html">RESERVA DE HABITACIONES</a></li>
+                <li><a href="formulario2.html">REGISTRO PARA MATRICULA</a></li>
+                <li><a href="formulario3.html">REGISTRO QUIOSCO</a></li>
+            </ul>
+        </li>
+        <li><a href="album.html">ALBUM </a></li>
+    </ul>
+</nav>
+
+<div class="fondo">
+    <div class="card">
+
+        <form>
+
+            <h2>REGISTRO QUIOSCO</h2>
+
+            <!-- Nombre -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <!-- Apellido -->
+            <label>Apellido:</label>
+            <input type="text" name="apellido" required>
+
+            <!-- Turno -->
+            <p class="descripcion">Selecciona turno</p>
+            <label><input type="radio" name="turno" value="mañana"> Mañana</label>
+            <label><input type="radio" name="turno" value="tarde" checked> Tarde</label>
+            <label><input type="radio" name="turno" value="noche"> Noche</label>
+
+            <!-- Productos -->
+            <p class="descripcion">Productos</p>
+            <label><input type="checkbox" name="productos" value="galletas"> Galletas</label>
+            <label><input type="checkbox" name="productos" value="arroz"> Arroz</label>
+            <label><input type="checkbox" name="productos" value="aceite"> Aceite</label>
+            <label><input type="checkbox" name="productos" value="papa"> Papa</label>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Todos los derechos reservados © 2026</p>
+</footer>
+
+</body>
+</html>

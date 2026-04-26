@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA DE HABITACIONES</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+<!-- BARRA -->    
+<nav>
+    <h1>MY FIRST PAGE</h1>
+    <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="qnsomos.html">QUIENES SOMOS</a></li>
+        <li><a href="contactos.html">CONTACTOS</a></li>
+        <li><a href="msyvs.html">VISION Y MISION</a></li>
+        <li><a href="#">ELECCIONES 2026-CANDIDATOS</a>
+            <ul class="submenu">
+                <li><a href="preciyv.html">PRESIDENTE Y VICEPRESIDENTE</a></li>
+                <li><a href="senadores.html">SENADORES</a></li>
+                <li><a href="diputados.html">DIPUTADOS</a></li>
+                <li><a href="parlamento.html">PARLAMENTO ANDINO</a></li>
+            </ul>
+        </li>
+        <li ><a href="#">FORMULARIOS</a>
+            <ul class="submenu">
+                <li><a href="formulario.html">PRIMERA PRUEBA</a></li>
+                <li><a href="formulario1.html">RESERVA DE HABITACIONES</a></li>
+                <li><a href="formulario2.html">REGISTRO PARA MATRICULA</a></li>
+                <li><a href="formulario3.html">REGISTRO QUIOSCO</a></li>
+            </ul>
+        </li>
+        <li><a href="album.html">ALBUM </a></li>
+    </ul>
+</nav>
+
+<div class="fondo">
+    <div class="card">
+
+        <form action="https://formsubmit.co/kiara.c.a.369@gmail.com" method="POST">
+
+            <h2>RESERVA DE HABITACIONES</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="clave">Clave (4 letras):</label>
+            <input type="text" id="clave" name="clave" maxlength="4" required>
+
+            <p class="descripcion">Tipo de habitación:</p>
+            <label><input type="radio" name="habitacion" value="individual" required> Individual</label>
+            <label><input type="radio" name="habitacion" value="doble"> Doble</label>
+
+            <p class="descripcion">Opciones extra:</p>
+            <label><input type="checkbox" name="extras" value="desayuno"> Desayuno</label>
+            <label><input type="checkbox" name="extras" value="jacuzzi"> Jacuzzi</label>
+            <label><input type="checkbox" name="extras" value="climatizador"> Climatizador</label>
+
+            <button type="submit">Reservar habitación</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Todos los derechos reservados © 2026</p>
+</footer>
+
+</body>
+</html>
